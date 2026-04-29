@@ -787,7 +787,7 @@
           .replaceAll("'", "&#039;");
       }
 
-      function workSection({ id, number, title, text, cta }) {
+      function workSection({ id, number, title, text, cta, t }) {
         const contentHtml =
           id === "wolt"
             ? `
@@ -966,10 +966,10 @@
             </div>
           </section>
 
-          ${workSection({ id: "wolt", number: "01", title: t.wolt, text: "", cta: t.sectionCta })}
-          ${workSection({ id: "tirat", number: "02", title: t.tirat, text: "", cta: t.sectionCta })}
-          ${workSection({ id: "own", number: "03", title: t.own, text: "", cta: t.sectionCta })}
-          ${workSection({ id: "tzahi", number: "04", title: t.tzahi, text: "", cta: t.sectionCta })}
+          ${workSection({ id: "wolt", number: "01", title: t.wolt, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "tirat", number: "02", title: t.tirat, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "own", number: "03", title: t.own, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "tzahi", number: "04", title: t.tzahi, text: "", cta: t.sectionCta, t })}
           <section id="fans" class="work-section">
             <div class="container work-grid">
               <div>
