@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1417" height="913" viewBox="0 0 1417 913" role="img" aria-labelledby="title desc">
+  <title id="title">Wolt proposed gift campaign visual</title>
+  <desc id="desc">A turquoise Wolt-style campaign visual with Hebrew copy about a 100 shekel benefit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#004b78"/>
+      <stop offset=".52" stop-color="#02aac0"/>
+      <stop offset="1" stop-color="#005482"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".7" r=".55">
+      <stop offset="0" stop-color="#e7f9e4" stop-opacity=".72"/>
+      <stop offset=".4" stop-color="#65dae2" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#004b78" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#9a621e"/>
+      <stop offset=".22" stop-color="#f3ce77"/>
+      <stop offset=".52" stop-color="#b67a2a"/>
+      <stop offset=".78" stop-color="#ffdf8b"/>
+      <stop offset="1" stop-color="#9b611d"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#002a3d" flood-opacity=".28"/>
+    </filter>
+  </defs>
+
+  <rect width="1417" height="913" fill="#fff"/>
+  <rect x="23" y="23" width="1370" height="808" rx="58" fill="url(#bg)"/>
+  <rect x="23" y="23" width="1370" height="808" rx="58" fill="url(#glow)"/>
+
+  <g opacity=".8" fill="url(#gold)">
+    <rect x="72" y="-6" width="25" height="72" rx="4" transform="rotate(20 72 -6)"/>
+    <rect x="1360" y="4" width="64" height="26" rx="3" transform="rotate(43 1360 4)"/>
+    <rect x="1355" y="222" width="61" height="18" rx="3" transform="rotate(-20 1355 222)"/>
+    <rect x="1280" y="633" width="35" height="62" rx="4" transform="rotate(-7 1280 633)"/>
+    <rect x="24" y="682" width="23" height="75" rx="4" transform="rotate(27 24 682)"/>
+  </g>
+
+  <g transform="translate(1204 58)">
+    <circle cx="74" cy="74" r="74" fill="#fff"/>
+    <circle cx="74" cy="74" r="66" fill="#10c4df"/>
+    <text x="74" y="92" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="46" font-weight="700" font-style="italic">Wolt</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <path d="M448 698 L590 645 L709 746 L828 645 L970 698 L830 787 L587 787 Z" fill="#f6f2e8"/>
+    <path d="M590 645 L709 746 L587 787 L448 698 Z" fill="#efe7d9"/>
+    <path d="M828 645 L709 746 L830 787 L970 698 Z" fill="#fffaf0"/>
+    <path d="M447 698 C530 748 634 790 708 790 C782 790 894 748 970 698" fill="none" stroke="#d8cdbb" stroke-width="6"/>
+    <path d="M88 814 C218 742 340 868 468 806 C558 762 612 776 696 820 C786 868 870 766 972 802 C1078 839 1157 816 1262 789" fill="none" stroke="url(#gold)" stroke-width="17"/>
+    <path d="M488 615 C528 586 571 604 602 650" fill="none" stroke="url(#gold)" stroke-width="19"/>
+    <path d="M887 644 C906 592 943 589 941 650" fill="none" stroke="url(#gold)" stroke-width="19"/>
+  </g>
+
+  <g transform="translate(520 40)" filter="url(#softShadow)">
+    <path d="M0 100 L185 52 L366 100 L297 170 L74 170 Z" fill="#f8efe1"/>
+    <path d="M74 170 L297 170 L366 100 L185 145 L0 100 Z" fill="#e4d4bd"/>
+    <path d="M179 55 L209 49 L205 167 L174 171 Z" fill="url(#gold)"/>
+    <path d="M80 77 L110 69 L290 127 L262 137 Z" fill="url(#gold)" opacity=".9"/>
+    <path d="M185 50 C134 -24 88 15 152 51 C88 58 92 121 172 66 C169 139 245 132 212 63 C281 83 302 18 218 50 C249 -21 176 -31 185 50 Z" fill="url(#gold)"/>
+  </g>
+
+  <text x="715" y="302" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="58" font-weight="400">😉 באר שבעיים, אל תצאו באשליים</text>
+  <text x="715" y="430" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="94" font-weight="900">קבלו הטבה של 100 ₪!</text>
+
+  <rect x="370" y="481" width="675" height="100" rx="19" fill="#fff"/>
+  <text x="708" y="553" text-anchor="middle" fill="#12c3df" font-family="Arial, sans-serif" font-size="72" font-weight="900">עם הקוד: xxxxxx</text>
+
+  <text x="708" y="876" text-anchor="middle" fill="#11c3df" font-family="Arial, sans-serif" font-size="34" font-weight="800">
+    <tspan x="708" dy="0">משפטית משפטית משפטית משפטית משפטית משפטית משפטית משפטית</tspan>
+    <tspan x="708" dy="38">משפטית משפטית משפטית משפטית משפטית משפטית משפטית</tspan>
+  </text>
+</svg>

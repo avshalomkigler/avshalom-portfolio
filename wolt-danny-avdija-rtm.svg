@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="645" height="773" viewBox="0 0 645 773" role="img" aria-labelledby="title desc">
+  <title id="title">RTM Danny Avdija playoff proposal</title>
+  <desc id="desc">A turquoise social post mockup with Hebrew copy and a basketball bath-ball product card.</desc>
+  <rect width="645" height="773" fill="#11bdd3"/>
+
+  <text x="322" y="104" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="36" font-weight="500">הדרך לפלייאוף</text>
+  <text x="322" y="143" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="37" font-weight="900">יכולה להתחיל באמבטיה 😉</text>
+
+  <rect x="131" y="202" width="377" height="473" rx="8" fill="#fff"/>
+  <circle cx="163" cy="231" r="15" fill="#efefef"/>
+  <path d="M157 225 L169 237 M169 225 L157 237" stroke="#222" stroke-width="3" stroke-linecap="round"/>
+
+  <g transform="translate(205 298)">
+    <path d="M0 7 L210 -7 L230 224 L21 244 Z" fill="#c7d8df"/>
+    <path d="M29 19 L204 10 L218 211 L42 225 Z" fill="#87bed0"/>
+    <path d="M0 7 L29 19 L42 225 L21 244 Z" fill="#f8f8f8"/>
+    <path d="M0 7 L29 19 L29 209 L0 190 Z" fill="#fff"/>
+    <path d="M0 7 L210 -7 L204 10 L29 19 Z" fill="#3d577f"/>
+    <path d="M210 -7 L230 224 L218 211 L204 10 Z" fill="#274a7b"/>
+
+    <g opacity=".85">
+      <circle cx="13" cy="34" r="9" fill="#ff813a"/>
+      <circle cx="14" cy="69" r="9" fill="#ff813a"/>
+      <circle cx="16" cy="105" r="9" fill="#ff813a"/>
+      <circle cx="18" cy="140" r="9" fill="#ff813a"/>
+      <circle cx="20" cy="176" r="9" fill="#ff813a"/>
+      <path d="M4 34 H22 M13 25 V43 M5 28 C17 34 18 39 7 43" stroke="#fff" stroke-width="2" fill="none"/>
+      <path d="M5 69 H23 M14 60 V78 M6 63 C18 69 19 74 8 78" stroke="#fff" stroke-width="2" fill="none"/>
+      <path d="M7 105 H25 M16 96 V114 M8 99 C20 105 21 110 10 114" stroke="#fff" stroke-width="2" fill="none"/>
+      <path d="M9 140 H27 M18 131 V149 M10 134 C22 140 23 145 12 149" stroke="#fff" stroke-width="2" fill="none"/>
+      <path d="M11 176 H29 M20 167 V185 M12 170 C24 176 25 181 14 185" stroke="#fff" stroke-width="2" fill="none"/>
+    </g>
+
+    <rect x="49" y="45" width="150" height="45" rx="3" fill="#f2bd69"/>
+    <text x="124" y="74" text-anchor="middle" fill="#31547c" font-family="Arial, sans-serif" font-size="20" font-weight="900">BATH BALL</text>
+
+    <circle cx="77" cy="133" r="35" fill="#f47b22"/>
+    <path d="M46 133 H108 M77 98 V168 M57 109 C83 122 88 147 64 161 M97 107 C74 122 69 147 91 160" stroke="#292929" stroke-width="3" fill="none"/>
+    <ellipse cx="153" cy="139" rx="53" ry="31" fill="#2c2f82"/>
+    <ellipse cx="153" cy="137" rx="41" ry="22" fill="#f2f2f2"/>
+    <path d="M113 137 C135 154 171 156 194 136" stroke="#999" stroke-width="2" fill="none"/>
+    <circle cx="179" cy="188" r="20" fill="#ff7c35" opacity=".8"/>
+    <path d="M160 188 H198 M179 168 V208 M166 174 C184 185 187 198 171 204" stroke="#333" stroke-width="2" fill="none"/>
+    <text x="63" y="218" fill="#222" font-family="Arial, sans-serif" font-size="9">WARNING:</text>
+  </g>
+
+  <text x="322" y="617" text-anchor="middle" fill="#2a2a2a" font-family="Arial, sans-serif" font-size="28" font-weight="900">משחק אמבטיה כדורסל</text>
+</svg>
