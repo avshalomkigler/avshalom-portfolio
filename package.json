@@ -1,0 +1,9 @@
+{
+  "name": "avshalom-kigler-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preview": "node serve-preview.mjs",
+    "start": "node serve-preview.mjs"
+  }
+}

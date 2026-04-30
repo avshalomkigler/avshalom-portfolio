@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Avshalom Kigler Portfolio Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <style>
       * {
         box-sizing: border-box;
@@ -19,6 +22,7 @@
         background: #fff;
         color: #000;
         font-family:
+          "Assistant",
           Arial,
           "Helvetica Neue",
           sans-serif;
@@ -129,8 +133,13 @@
       .about-title,
       .footer-title {
         margin: 0;
-        font-weight: 700;
-        letter-spacing: -0.02em;
+        font-family:
+          "Assistant",
+          Arial,
+          "Helvetica Neue",
+          sans-serif;
+        font-weight: 800;
+        letter-spacing: 0;
       }
 
       .hero-title {
@@ -141,11 +150,12 @@
       }
 
       .intro {
-        max-width: 680px;
+        max-width: 900px;
         margin: 32px 0 0;
         color: rgb(0 0 0 / 0.6);
         font-size: 24px;
         line-height: 1.65;
+        white-space: pre-line;
       }
 
       .actions {
@@ -281,6 +291,328 @@
 
       #wolt-content .work-image {
         width: 62%;
+      }
+
+      .mockup-subgroup {
+        margin-top: 64px;
+      }
+
+      .mockup-subtitle {
+        margin: 0 0 28px;
+        font-family:
+          "Assistant",
+          Arial,
+          "Helvetica Neue",
+          sans-serif;
+        font-size: clamp(16px, 1.8vw, 26px);
+        font-weight: 700;
+        letter-spacing: 0;
+        line-height: 1.15;
+        text-align: center;
+      }
+
+      .mockup-note {
+        margin: 0 auto 14px;
+        max-width: 520px;
+        color: rgb(0 0 0 / 0.64);
+        font-size: clamp(18px, 1.8vw, 26px);
+        font-weight: 700;
+        line-height: 1.25;
+        text-align: center;
+      }
+
+      .mockup-note strong {
+        display: block;
+        color: #000;
+        font-size: clamp(22px, 2vw, 32px);
+      }
+
+      .campaign-list {
+        display: grid;
+        gap: 56px;
+        margin-top: 48px;
+      }
+
+      .campaign-item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+        gap: 40px;
+        align-items: start;
+        padding-top: 32px;
+        border-top: 1px solid rgb(0 0 0 / 0.12);
+      }
+
+      .campaign-copy {
+        display: grid;
+        gap: 16px;
+      }
+
+      .campaign-title {
+        margin: 0;
+        font-size: clamp(24px, 2.4vw, 38px);
+        font-weight: 800;
+        line-height: 1.15;
+      }
+
+      .campaign-text {
+        margin: 0;
+        color: rgb(0 0 0 / 0.62);
+        font-size: 18px;
+        line-height: 1.65;
+      }
+
+      .campaign-preview-row {
+        display: grid;
+        gap: 0;
+        align-items: center;
+      }
+
+      .campaign-item.is-open .campaign-preview-row {
+        grid-template-columns: 1fr;
+      }
+
+      .campaign-preview {
+        overflow: hidden;
+        margin: 0;
+        color: rgb(0 0 0 / 0.58);
+        font-size: 18px;
+        line-height: 1.55;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .campaign-item.is-open .campaign-preview {
+        overflow: visible;
+        color: rgb(0 0 0 / 0.62);
+        text-overflow: clip;
+        white-space: normal;
+      }
+
+      .campaign-toggle {
+        display: grid;
+        width: 34px;
+        height: 34px;
+        place-items: center;
+        border: 1px solid rgb(0 0 0 / 0.18);
+        border-radius: 50%;
+        background: transparent;
+        color: #000;
+        cursor: pointer;
+        transition:
+          border-color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .campaign-toggle-wrap {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .campaign-toggle:hover {
+        border-color: #000;
+      }
+
+      .campaign-item.is-open .campaign-toggle {
+        margin-top: 2px;
+      }
+
+      .campaign-arrow {
+        width: 8px;
+        height: 8px;
+        border-right: 1.5px solid currentColor;
+        border-bottom: 1.5px solid currentColor;
+        transform: translateY(-2px) rotate(45deg);
+        transition: transform 0.28s ease;
+      }
+
+      .campaign-item.is-open .campaign-arrow {
+        transform: translateY(2px) rotate(225deg);
+      }
+
+      .campaign-full {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition:
+          max-height 0.36s ease,
+          opacity 0.24s ease;
+      }
+
+      .campaign-item.is-open .campaign-full {
+        max-height: 360px;
+        opacity: 1;
+      }
+
+      .campaign-media {
+        display: grid;
+        gap: 18px;
+      }
+
+      .campaign-media-rich {
+        grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+        gap: 34px;
+        align-items: start;
+        direction: ltr;
+      }
+
+      .campaign-subsection-wide {
+        grid-column: 1 / -1;
+      }
+
+      .campaign-subsection {
+        display: grid;
+        gap: 18px;
+        direction: rtl;
+      }
+
+      .campaign-subsection-instagram {
+        grid-column: 2;
+      }
+
+      .campaign-subsection-merch {
+        grid-column: 2;
+      }
+
+      .campaign-subsection-merch .work-image {
+        width: 100%;
+        border-radius: 16px;
+      }
+
+      .campaign-subsection-social {
+        grid-column: 1;
+      }
+
+      .campaign-copy .campaign-subsection-social {
+        margin-top: 8px;
+      }
+
+      .campaign-copy .campaign-subsection-social .work-media-grid {
+        gap: 16px;
+        margin-top: 0;
+      }
+
+      .campaign-copy .campaign-subsection-social .work-image {
+        width: 100%;
+        border-radius: 16px;
+      }
+
+      .campaign-copy .campaign-subsection-social .soulmate-landing-item {
+        grid-column: 1 / -1;
+      }
+
+      .campaign-copy .campaign-subsection-social .soulmate-merch-item {
+        grid-column: 1 / -1;
+      }
+
+      .campaign-subtitle {
+        margin: 0;
+        font-size: clamp(18px, 1.7vw, 26px);
+        font-weight: 800;
+        line-height: 1.2;
+      }
+
+      .campaign-link-card {
+        display: inline-flex;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 10px 18px;
+        border: 1px solid #000;
+        border-radius: 999px;
+        color: #000;
+        font-size: 15px;
+        font-weight: 700;
+        transition:
+          background 0.2s ease,
+          color 0.2s ease;
+      }
+
+      .campaign-link-card:hover {
+        background: #000;
+        color: #fff;
+      }
+
+      .instagram-preview-card {
+        display: grid;
+        gap: 12px;
+        align-content: center;
+        min-height: 180px;
+        padding: 24px;
+        border: 1px solid rgb(0 0 0 / 0.12);
+        border-radius: 10px;
+        background: #fff;
+      }
+
+      .instagram-preview-card p {
+        margin: 0;
+        color: rgb(0 0 0 / 0.58);
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .carousel {
+        position: relative;
+        width: min(100%, 820px);
+      }
+
+      .carousel-frame {
+        overflow: hidden;
+        border-radius: 10px;
+        background: #fff;
+      }
+
+      .carousel-track {
+        display: flex;
+        direction: ltr;
+        transition: transform 0.36s ease;
+      }
+
+      .carousel-slide {
+        display: block;
+        flex: 0 0 100%;
+        width: 100%;
+        height: auto;
+      }
+
+      .carousel-controls {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: -82px;
+        transform: translateY(-50%);
+      }
+
+      .carousel-next {
+        display: grid;
+        width: 32px;
+        height: 32px;
+        place-items: center;
+        border: 1px solid rgb(0 0 0 / 0.18);
+        border-radius: 50%;
+        background: transparent;
+        color: #000;
+        cursor: pointer;
+        transition:
+          border-color 0.2s ease,
+          transform 0.2s ease;
+      }
+
+      .carousel-next:hover {
+        border-color: #000;
+      }
+
+      .carousel-next-mark {
+        width: 7px;
+        height: 7px;
+        border-left: 1.5px solid currentColor;
+        border-bottom: 1.5px solid currentColor;
+        transform: translateX(2px) rotate(45deg);
+      }
+
+      .campaign-media .carousel-slide {
+        border: 0;
+        border-radius: 10px;
       }
 
       .reference-layout {
@@ -521,6 +853,10 @@
         cursor: zoom-in;
       }
 
+      [data-zoom-src] {
+        cursor: zoom-in;
+      }
+
       .image-modal {
         position: fixed;
         inset: 0;
@@ -537,11 +873,12 @@
       }
 
       .image-modal img {
-        max-width: min(100%, 1100px);
-        max-height: 88vh;
+        max-width: min(100%, 1400px);
+        max-height: 92vh;
         border: 1px solid rgb(0 0 0 / 0.16);
         border-radius: 18px;
         background: #fff;
+        object-fit: contain;
       }
 
       .image-modal-close {
@@ -676,6 +1013,7 @@
         .work-grid,
         .about-grid,
         .work-media-grid,
+        .campaign-item,
         .reference-layout,
         .reference-side-grid {
           grid-template-columns: 1fr;
@@ -683,6 +1021,38 @@
 
         .reference-layout {
           gap: 28px;
+        }
+
+        .campaign-preview-row {
+          grid-template-columns: 1fr;
+          gap: 12px;
+        }
+
+        .campaign-media-rich {
+          grid-template-columns: 1fr;
+        }
+
+        .campaign-subsection-wide {
+          grid-column: auto;
+        }
+
+        .campaign-subsection-instagram,
+        .campaign-subsection-merch,
+        .campaign-subsection-social {
+          grid-column: auto;
+        }
+
+        .carousel {
+          width: 100%;
+        }
+
+        .carousel-controls {
+          left: 8px;
+        }
+
+        .carousel-next {
+          background: rgb(255 255 255 / 0.86);
+          backdrop-filter: blur(12px);
         }
 
         .reference-media {
@@ -707,14 +1077,16 @@
       const content = {
         he: {
           langLabel: "EN",
-          nav: ["מי אני", "וולט", "טירת צבי", "חזוניש", "צחי רוק", "אתר מעריצים", "דברו אליי"],
+          nav: ["מי אני", "וולט", "טירת צבי", "מוקאפ - פרינטים", "מוקאפ - קמפיינים וגרילה", "חזוניש", "צחי רוק", "אתר מעריצים", "דברו אליי"],
           name: "אבשלום קיגלר",
           title: "אבשלום קיגלר",
-          intro: "קריאייטיב.",
+          intro: "קריאייטיב.\n\nראיתם מה עשיתי פה? רשמתי קריאייטיב ושמתי נקודה. ממש סטייטמנט. מה חשבתי לעצמי כשעשיתי את זה? כנראה לא רציתי ליפול לקלישאה של קופירייטר שכותב יותר מידי, אז נפלתי לקלישאה של קופירייטר שכותב מעט מידי. איזה אהבל. אבל אז דוד ראה את זה ואמר שחסר פה איזה משהו... איזה זץ, איזה זסט מהאופי שלי כאילו הכתיבה שלי זה לימון. פאק איט אני לימון זהו זה מה שיש לי להגיד על עצמי. סתם לא יש עוד חלק מתחת ושם אני מספר על עצמי.",
           start: "להתחיל",
           contact: "יצירת קשר",
           wolt: "וולט",
           tirat: "טירת צבי - שירים לסרטונים",
+          mockupPrint: "מוקאפ - פרינטים",
+          mockupGuerrilla: "מוקאפ - קמפיינים וגרילה",
           own: "חזוניש",
           tzahi: "צחי רוק",
           fans: "אתר מעריצים",
@@ -728,6 +1100,36 @@
           debutPostAlt: "טקסט מפוסט הבכורה של חזוניש",
           tiktokTrendTitle: "לטרנד בטיקטוק",
           tiktokTrendLinkText: "פראיירים בטיקטוק",
+          openDetailsLabel: "פתיחת הסבר",
+          transparentBagTitle: "התיק השקוף של וולט",
+          transparentBagPreview: "מהלך של תיקי וולט שקופים לפי האסטרטגיה של וולט, שחושפת את החיים המקבילים של השליחים.",
+          transparentBagText: "במקום אוכל, השליחים נושאים פריטים שמייצגים את העיסוק המקביל שלהם - כלי עבודה, ציוד צילום, ציוד כושר.\nהמהלך יתוקשר ברשתות ויציג מי באמת נמצא מאחורי המשלוח.",
+          transparentBagAlt: "מוקאפ תיק וולט שקוף עם כלי עבודה על קטנוע",
+          wishWallTitle: "קיר המשאלות של וולט",
+          wishWallPreview: "כדי לגרום ליותר אנשים להצטרף ולעשות משלוחים עם וולט, נקים \"קיר\" עשוי מתיקי וולט במיקום מרכזי.",
+          wishWallText: "עוברי אורח יוזמנו להכניס פתקים עם משאלות שהכנו מראש כמו רכב חדש, חופשה בתאילנד, לשלם על התואר או לקנות תיק יוקרה.\nברגע שהפתק נכנס, שליח וולט מופיע, מוסר להם תיק ואומר: כמה משלוחים ואתם בדרך לשם.\nהמהלך יצולם ויתוקשר בסושיאל.",
+          wishWallAlt: "מוקאפ קיר משאלות עשוי מתיקי וולט",
+          soulmateTitle: "ריטריט כלבים של סולמייט",
+          soulmatePreview: "סולמייט הוא מותג אוכל לכלבים. כדי להמחיש שכלב שאוכל סולמייט נהנה מעיכול טוב יותר וקקי בריא יותר, נקים ריטריט וולנס לכלבים בשם \"ארצה\".",
+          soulmateText: "בעלי כלבים יוזמנו להגיע עם הכלב ליום כיף שכולל מתחמי רוגע, פינוק, טעימות ומסלולי פעילות.\nהמהלך יוזנק בעזרת סרט דיגיטל, יצולם ויתוקשר בסושיאל, ויקודם באמצעות מרצ'נדייז.",
+          soulmateSocialTitle: "שיתופי פעולה בפייסבוק ובלינקדאין",
+          soulmateLandingTitle: "דף נחיתה",
+          soulmateMerchTitle: "מרצ' וסטיקרים",
+          soulmateDigitalFilmTitle: "סרט דיגיטל",
+          soulmateInstagramTitle: "אינסטגרם לריטריט",
+          soulmateInstagramLink: "פוסט אינסטגרם של הריטריט",
+          soulmateOpenDetailsLabel: "פתיחת הסבר",
+          soulmateNextImageLabel: "לתמונה הבאה",
+          soulmateFacebookZoomLabel: "הגדלת שיתוף פעולה בפייסבוק",
+          soulmateLinkedinZoomLabel: "הגדלת שיתוף פעולה בלינקדאין",
+          soulmateLandingZoomLabel: "הגדלת דף נחיתה",
+          soulmateMerchZoomLabel: "הגדלת מרצ' וסטיקרים",
+          soulmateFacebookAlt: "מוקאפ שיתופי פעולה בפייסבוק לריטריט כלבים של סולמייט",
+          soulmateLinkedinAlt: "מוקאפ שיתופי פעולה בלינקדאין לריטריט כלבים של סולמייט",
+          soulmateLandingAlt: "דף נחיתה לריטריט כלבים של סולמייט",
+          soulmateMerchAlt: "מרצ' וסטיקרים לריטריט כלבים של סולמייט",
+          soulmateFilmAlt1: "סטוריבורד סרט דיגיטל ריטריט כלבים של סולמייט - חלק ראשון",
+          soulmateFilmAlt2: "סטוריבורד סרט דיגיטל ריטריט כלבים של סולמייט - חלק שני",
           tzahiText: "צחי רוק הוא דמות שיצרתי של רוקיסט מזדקן ותימהוני. בעזרת ההיכרות שלי עם הטיקטוק עליתי על תבנית פשוטה לסרטונים שהצליחו לתפוס קהל עוקבים נאמן. את צחי אני מארח בהופעות, ומשתמש בדמות כדי להצחיק, לרגש ולמכור כרטיסים.",
           tzahiTiktokTitle: "צחי רוק בטיקטוק",
           about: "מי אני",
@@ -741,14 +1143,16 @@
         },
         en: {
           langLabel: "עב",
-          nav: ["About", "Wolt", "Tirat Zvi", "Hazonish", "Tzahi Rock", "Fan Site", "Contact"],
+          nav: ["About", "Wolt", "Tirat Zvi", "Mockup - Prints", "Mockup - Campaigns & Guerrilla", "Hazonish", "Tzahi Rock", "Fan Site", "Contact"],
           name: "Avshalom Kigler",
           title: "Avshalom Kigler",
-          intro: "Creative.",
+          intro: "Creative.\n\nSee what I did there? I wrote creative and added a period. A real statement. What was I thinking when I did that... I probably didn’t want to fall into the cliche of a copywriter who writes too much, so I fell into the cliche of a copywriter who writes too little. What an idiot. But then David saw it and said it was missing something, some punch, some zest from my personality, as if my writing is a lemon. Fuck it, I’m a lemon. That’s all I have to say about myself. Just kidding, there’s another section below where I actually talk about myself.",
           start: "Start",
           contact: "Contact",
           wolt: "Wolt",
           tirat: "Tirat Zvi",
+          mockupPrint: "Mockup - Prints",
+          mockupGuerrilla: "Mockup - Campaigns & Guerrilla",
           own: "Hazonish",
           tzahi: "Tzahi Rock",
           fans: "Fan Site",
@@ -762,6 +1166,36 @@
           debutPostAlt: "Debut post text by Hazonish",
           tiktokTrendTitle: "TikTok trend",
           tiktokTrendLinkText: "Fryers on TikTok",
+          openDetailsLabel: "Open explanation",
+          transparentBagTitle: "Wolt Transparent Bag",
+          transparentBagPreview: "A transparent Wolt bag activation based on Wolt’s strategy, revealing the parallel lives of the couriers.",
+          transparentBagText: "Instead of food, couriers carry items that represent their parallel occupation - tools, camera gear, fitness equipment.\nThe move will be communicated on social and reveal who is really behind the delivery.",
+          transparentBagAlt: "Transparent Wolt bag mockup with tools on a scooter",
+          wishWallTitle: "Wolt Wish Wall",
+          wishWallPreview: "To encourage more people to join Wolt and make deliveries, we’ll build a central-location wall made of Wolt bags.",
+          wishWallText: "Passersby will be invited to drop in notes with wishes we prepared in advance, like a new car, a vacation in Thailand, paying for a degree or buying a luxury bag.\nWhen the note goes in, a Wolt courier appears, hands them a bag and says: a few deliveries and you’re on your way there.\nThe move will be filmed and communicated on social.",
+          wishWallAlt: "Wish wall mockup made from Wolt bags",
+          soulmateTitle: "Soulmate Dog Retreat",
+          soulmatePreview: "Soulmate is a dog food brand. To show that dogs who eat Soulmate enjoy better digestion and healthier poop, we’ll create a wellness retreat for dogs called Artza.",
+          soulmateText: "Dog owners will be invited to bring their dogs to a fun day with calm zones, pampering, tastings and activity trails.\nThe move will launch with a digital film, be documented and communicated on social, and promoted through merch.",
+          soulmateSocialTitle: "Facebook and LinkedIn collaborations",
+          soulmateLandingTitle: "Landing page",
+          soulmateMerchTitle: "Merch and stickers",
+          soulmateDigitalFilmTitle: "Digital film",
+          soulmateInstagramTitle: "Retreat Instagram",
+          soulmateInstagramLink: "Retreat Instagram post",
+          soulmateOpenDetailsLabel: "Open explanation",
+          soulmateNextImageLabel: "Next image",
+          soulmateFacebookZoomLabel: "Open Facebook collaboration",
+          soulmateLinkedinZoomLabel: "Open LinkedIn collaboration",
+          soulmateLandingZoomLabel: "Open landing page",
+          soulmateMerchZoomLabel: "Open merch and stickers",
+          soulmateFacebookAlt: "Facebook collaboration mockup for Soulmate dog retreat",
+          soulmateLinkedinAlt: "LinkedIn collaboration mockup for Soulmate dog retreat",
+          soulmateLandingAlt: "Landing page for Soulmate dog retreat",
+          soulmateMerchAlt: "Merch and stickers for Soulmate dog retreat",
+          soulmateFilmAlt1: "Digital film storyboard for Soulmate dog retreat - part one",
+          soulmateFilmAlt2: "Digital film storyboard for Soulmate dog retreat - part two",
           tzahiText: "Tzahi Rock is a character I created: an aging, eccentric rocker. Using my familiarity with TikTok, I found a simple video format that managed to build a loyal audience. I host Tzahi at shows and use the character to make people laugh, feel something, and buy tickets.",
           tzahiTiktokTitle: "Tzahi Rock on TikTok",
           about: "About",
@@ -827,6 +1261,147 @@
                   <figure class="work-item">
                     <video class="work-video" src="tirat-zvi-song-02.mp4" controls playsinline preload="metadata"></video>
                   </figure>
+                </div>
+              `
+            : id === "mockup-print"
+              ? `
+                <div class="container work-media-grid" id="${escapeHtml(id)}-content">
+                  <figure class="work-item">
+                    <img class="work-image" src="mockup-print-typographic.png" alt="מוקאפ פרינט טיפוגרפי לפרסיל" />
+                  </figure>
+                  <figure class="work-item">
+                    <img class="work-image" src="mockup-print-chupa.png" alt="מוקאפ פרינט לצ'ופה צ'אפס" />
+                  </figure>
+                </div>
+                <div class="container mockup-subgroup" dir="rtl">
+                  <h3 class="mockup-subtitle">וולט - חודש המודעות לסרטן השד</h3>
+                  <div class="work-media-grid">
+                    <figure class="work-item">
+                      <figcaption class="mockup-note"><strong>1</strong>קופץ כשנכנסים לבדוק את ההזמנה</figcaption>
+                      <img class="work-image" src="mockup-print-wolt-breast-cancer-2.png" alt="מוקאפ וולט לחודש המודעות לסרטן השד - קופץ כשנכנסים לבדוק את ההזמנה" />
+                    </figure>
+                    <figure class="work-item">
+                      <figcaption class="mockup-note"><strong>2</strong>מסך ההזמנה מתחלף</figcaption>
+                      <img class="work-image" src="mockup-print-wolt-breast-cancer-1.png" alt="מוקאפ וולט לחודש המודעות לסרטן השד - מסך ההזמנה מתחלף" />
+                    </figure>
+                  </div>
+                </div>
+              `
+            : id === "mockup-guerrilla"
+              ? `
+                <div class="container campaign-list" id="${escapeHtml(id)}-content" dir="${lang === "he" ? "rtl" : "ltr"}">
+                  <article class="campaign-item">
+                    <div class="campaign-copy">
+                      <h3 class="campaign-title">${escapeHtml(t.soulmateTitle)}</h3>
+                      <div class="campaign-preview-row">
+                        <p class="campaign-preview">${escapeHtml(t.soulmatePreview)}</p>
+                      </div>
+                      <div class="campaign-full" aria-hidden="true">
+                        <p class="campaign-text">${escapeHtml(t.soulmateText)}</p>
+                      </div>
+                      <div class="campaign-toggle-wrap">
+                        <button class="campaign-toggle" type="button" aria-label="${escapeHtml(t.soulmateOpenDetailsLabel)}" aria-expanded="false">
+                          <span class="campaign-arrow" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                      <div class="campaign-subsection campaign-subsection-social">
+                        <h4 class="campaign-subtitle">${escapeHtml(t.soulmateSocialTitle)}</h4>
+                        <div class="work-media-grid">
+                          <figure class="work-item">
+                            <button class="zoom-button" type="button" data-zoom-src="soulmate-social-collab-facebook.png" aria-label="${escapeHtml(t.soulmateFacebookZoomLabel)}">
+                              <img class="work-image" src="soulmate-social-collab-facebook.png" alt="${escapeHtml(t.soulmateFacebookAlt)}" />
+                            </button>
+                          </figure>
+                          <figure class="work-item">
+                            <button class="zoom-button" type="button" data-zoom-src="soulmate-social-collab-linkedin.png" aria-label="${escapeHtml(t.soulmateLinkedinZoomLabel)}">
+                              <img class="work-image" src="soulmate-social-collab-linkedin.png" alt="${escapeHtml(t.soulmateLinkedinAlt)}" />
+                            </button>
+                          </figure>
+                          <figure class="work-item soulmate-landing-item">
+                            <h4 class="campaign-subtitle">${escapeHtml(t.soulmateLandingTitle)}</h4>
+                            <button class="zoom-button" type="button" data-zoom-src="soulmate-landing-page.png" aria-label="${escapeHtml(t.soulmateLandingZoomLabel)}">
+                              <img class="work-image" src="soulmate-landing-page.png" alt="${escapeHtml(t.soulmateLandingAlt)}" />
+                            </button>
+                          </figure>
+                          <figure class="work-item soulmate-merch-item">
+                            <h4 class="campaign-subtitle">${escapeHtml(t.soulmateMerchTitle)}</h4>
+                            <button class="zoom-button" type="button" data-zoom-src="soulmate-merch-stickers.png" aria-label="${escapeHtml(t.soulmateMerchZoomLabel)}">
+                              <img class="work-image" src="soulmate-merch-stickers.png" alt="${escapeHtml(t.soulmateMerchAlt)}" />
+                            </button>
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="campaign-media campaign-media-rich">
+                      <div class="campaign-subsection campaign-subsection-wide">
+                        <h4 class="campaign-subtitle">${escapeHtml(t.soulmateDigitalFilmTitle)}</h4>
+                        <div class="carousel" data-carousel>
+                          <div class="carousel-frame">
+                            <div class="carousel-track">
+                              <img class="carousel-slide" src="soulmate-digital-film-01.png" data-zoom-src="soulmate-digital-film-01.png" alt="${escapeHtml(t.soulmateFilmAlt1)}" />
+                              <img class="carousel-slide" src="soulmate-digital-film-02.png" data-zoom-src="soulmate-digital-film-02.png" alt="${escapeHtml(t.soulmateFilmAlt2)}" />
+                            </div>
+                          </div>
+                          <div class="carousel-controls">
+                            <button class="carousel-next" type="button" aria-label="${escapeHtml(t.soulmateNextImageLabel)}">
+                              <span class="carousel-next-mark" aria-hidden="true"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="campaign-subsection campaign-subsection-instagram">
+                        <h4 class="campaign-subtitle">${escapeHtml(t.soulmateInstagramTitle)}</h4>
+                        <blockquote
+                          class="instagram-media"
+                          data-instgrm-permalink="https://www.instagram.com/p/C-j6-KTNrrW/"
+                          data-instgrm-version="14"
+                          style="background:#fff; border:1px solid rgb(0 0 0 / 0.12); border-radius:10px; margin:0; max-width:100%; min-width:0; padding:0; width:100%;"
+                        >
+                          <a href="https://www.instagram.com/p/C-j6-KTNrrW/" target="_blank" rel="noreferrer">
+                            ${escapeHtml(t.soulmateInstagramLink)}
+                          </a>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="campaign-item">
+                    <div class="campaign-copy">
+                      <h3 class="campaign-title">${escapeHtml(t.transparentBagTitle)}</h3>
+                      <div class="campaign-preview-row">
+                        <p class="campaign-preview">${escapeHtml(t.transparentBagPreview)}</p>
+                      </div>
+                      <div class="campaign-full" aria-hidden="true">
+                        <p class="campaign-text">${escapeHtml(t.transparentBagText)}</p>
+                      </div>
+                      <div class="campaign-toggle-wrap">
+                        <button class="campaign-toggle" type="button" aria-label="${escapeHtml(t.openDetailsLabel)}" aria-expanded="false">
+                          <span class="campaign-arrow" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="campaign-media">
+                      <img class="work-image" src="mockup-guerrilla-wolt-transparent-bag.png" alt="${escapeHtml(t.transparentBagAlt)}" />
+                    </div>
+                  </article>
+                  <article class="campaign-item">
+                    <div class="campaign-copy">
+                      <h3 class="campaign-title">${escapeHtml(t.wishWallTitle)}</h3>
+                      <div class="campaign-preview-row">
+                        <p class="campaign-preview">${escapeHtml(t.wishWallPreview)}</p>
+                      </div>
+                      <div class="campaign-full" aria-hidden="true">
+                        <p class="campaign-text">${escapeHtml(t.wishWallText)}</p>
+                      </div>
+                      <div class="campaign-toggle-wrap">
+                        <button class="campaign-toggle" type="button" aria-label="${escapeHtml(t.openDetailsLabel)}" aria-expanded="false">
+                          <span class="campaign-arrow" aria-hidden="true"></span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="campaign-media">
+                      <img class="work-image" src="mockup-guerrilla-wolt-wish-wall.png" alt="${escapeHtml(t.wishWallAlt)}" />
+                    </div>
+                  </article>
                 </div>
               `
             : id === "own"
@@ -940,10 +1515,12 @@
                 <a href="#about">${escapeHtml(t.nav[0])}</a>
                 <a href="#wolt">${escapeHtml(t.nav[1])}</a>
                 <a href="#tirat">${escapeHtml(t.nav[2])}</a>
-                <a href="#own">${escapeHtml(t.nav[3])}</a>
-                <a href="#tzahi">${escapeHtml(t.nav[4])}</a>
-                <a href="#fans">${escapeHtml(t.nav[5])}</a>
-                <a href="#contact">${escapeHtml(t.nav[6])}</a>
+                <a href="#mockup-print">${escapeHtml(t.nav[3])}</a>
+                <a href="#mockup-guerrilla">${escapeHtml(t.nav[4])}</a>
+                <a href="#own">${escapeHtml(t.nav[5])}</a>
+                <a href="#tzahi">${escapeHtml(t.nav[6])}</a>
+                <a href="#fans">${escapeHtml(t.nav[7])}</a>
+                <a href="#contact">${escapeHtml(t.nav[8])}</a>
               </nav>
               <button class="lang-button" type="button" aria-label="Switch language">${escapeHtml(t.langLabel)}</button>
             </div>
@@ -953,7 +1530,7 @@
             <h1 class="hero-title">${escapeHtml(t.title)}</h1>
             <p class="intro">${escapeHtml(t.intro)}</p>
             <div class="actions">
-              <a href="#wolt" class="button primary">${escapeHtml(t.start)}</a>
+              <a href="#about" class="button primary">${escapeHtml(t.start)}</a>
               <a href="#contact" class="button secondary">${escapeHtml(t.contact)}</a>
             </div>
           </section>
@@ -968,8 +1545,10 @@
 
           ${workSection({ id: "wolt", number: "01", title: t.wolt, text: "", cta: t.sectionCta, t })}
           ${workSection({ id: "tirat", number: "02", title: t.tirat, text: "", cta: t.sectionCta, t })}
-          ${workSection({ id: "own", number: "03", title: t.own, text: "", cta: t.sectionCta, t })}
-          ${workSection({ id: "tzahi", number: "04", title: t.tzahi, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "mockup-print", number: "03", title: t.mockupPrint, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "mockup-guerrilla", number: "04", title: t.mockupGuerrilla, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "own", number: "05", title: t.own, text: "", cta: t.sectionCta, t })}
+          ${workSection({ id: "tzahi", number: "06", title: t.tzahi, text: "", cta: t.sectionCta, t })}
           <section id="fans" class="work-section">
             <div class="container work-grid">
               <div>
@@ -1013,6 +1592,55 @@
           render();
         });
 
+        const closeCampaign = (item) => {
+          const toggle = item.querySelector(".campaign-toggle");
+          const full = item.querySelector(".campaign-full");
+          item.classList.remove("is-open");
+          if (toggle) {
+            toggle.setAttribute("aria-expanded", "false");
+          }
+          if (full) {
+            full.setAttribute("aria-hidden", "true");
+          }
+        };
+
+        app.querySelectorAll(".campaign-toggle").forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const item = toggle.closest(".campaign-item");
+            if (!item) {
+              return;
+            }
+
+            const shouldOpen = !item.classList.contains("is-open");
+            app.querySelectorAll(".campaign-item.is-open").forEach(closeCampaign);
+
+            if (shouldOpen) {
+              const full = item.querySelector(".campaign-full");
+              item.classList.add("is-open");
+              toggle.setAttribute("aria-expanded", "true");
+              if (full) {
+                full.setAttribute("aria-hidden", "false");
+              }
+            }
+          });
+        });
+
+        app.querySelectorAll("[data-carousel]").forEach((carousel) => {
+          const track = carousel.querySelector(".carousel-track");
+          const slides = carousel.querySelectorAll(".carousel-slide");
+          const next = carousel.querySelector(".carousel-next");
+          let index = 0;
+
+          if (!track || !next || slides.length < 2) {
+            return;
+          }
+
+          next.addEventListener("click", () => {
+            index = (index + 1) % slides.length;
+            track.style.transform = `translateX(${-index * 100}%)`;
+          });
+        });
+
         const modal = app.querySelector(".image-modal");
         const modalImage = modal.querySelector("img");
         const closeModal = () => {
@@ -1024,7 +1652,7 @@
 
         app.querySelectorAll("[data-zoom-src]").forEach((button) => {
           button.addEventListener("click", () => {
-            const image = button.querySelector("img");
+            const image = button.matches("img") ? button : button.querySelector("img");
             modalImage.src = button.dataset.zoomSrc;
             modalImage.alt = image ? image.alt : "";
             modal.classList.add("is-open");
@@ -1057,6 +1685,30 @@
           const script = document.createElement("script");
           script.src = "https://www.tiktok.com/embed.js";
           script.async = true;
+          document.body.appendChild(script);
+        }, 0);
+
+        window.setTimeout(() => {
+          if (!app.querySelector(".instagram-media")) {
+            return;
+          }
+
+          const processInstagram = () => {
+            if (window.instgrm && window.instgrm.Embeds) {
+              window.instgrm.Embeds.process();
+            }
+          };
+
+          const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+          if (existingScript) {
+            processInstagram();
+            return;
+          }
+
+          const script = document.createElement("script");
+          script.src = "https://www.instagram.com/embed.js";
+          script.async = true;
+          script.onload = processInstagram;
           document.body.appendChild(script);
         }, 0);
       }
